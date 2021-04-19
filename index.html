@@ -74,13 +74,24 @@
                                 The Framework speedup the star-up of new ML applications and its development.
                                 <br />
                                 It adopt the MLOps approach using the Atlassian suite for the Repository Manager (BitBucket) and CI/CD Tool (Bamboo), and AWS Resources for ML pipelines (StepFunctions, Lambda and Sagemaker).
+                                <br />
+                                It includes also a Catalog that collect all the Framework deliverables. It is a serverless application. Use scheduled Lambdas to collect data and store them on AWS ElasticSearch service, that an AWS API Gateway + Lambda call to retrieve stored data and return them to the final client.
+                            </p>
+                            <p>
+                                <b>Development of a Common Data Catalog</b>
+                                <br />
+                                The catalog is build with Angular 9 + Material Design, served by a Wildfly server, that also expose APIs to interact with other BE.
                             </p>
                             <p>
                                 <b>Helping Data Scientist team build ML Models, taking care the application development</b>
                                 <br />
-                                Design and development of scalable API services based on a micro- services architecture.
+                                Design and development of scalable API services based on a micro-services architecture.
+                                <br />
+                                FastApi, as Python Framework, is mostly used to build the APIs. The application is deployed on a Kubernetes Cluster via a CI/CD pipeline following the GitFlow.
                                 <br />
                                 Build tools for extracting, transforming, and loading (ETL) jobs on diagnostic data sets.
+                                <br />
+                                Build CI/CD pipelines for building/testing/deployment of custom Python libraries with auto doc generation, using the Atlassian suite.
                             </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Arpil 2020 - Present</span></div>
@@ -99,11 +110,31 @@
                                 Each application funtionality is tested using Chai and Mocha as a Framework.
                             </p>
                             <p>
+                                <b>Design and development of a NodeJS Framework to build microservices</b>
+                                <br />
+                                The Framework, with a plugin approach, make developers easy build modular microservices using NodeJS and Express.
+                                <br />
+                                Each plugin is an npm package and represent a REST APIs, so that, plugin can shared and a team can focus on a single API for optimal developments separation.
+                                <br />
+                                TypeScript was chosen because it matched better with the IoC (Inversion of Control) pattern chosen for development.
+                            </p>
+                            <p>
                                 <b>Design and development of Cloud-Native solutions focused on AWS</b>
+                                <br />
+                                Build CI/CD pipeline to deploy serverless application to AWS with Jenkins and SAM (Serverless Application Model).
                                 <br />
                                 Development of a serverless GDPR management using AWS Cloudformation, Lambda, API Gateway and DynamoDB.
                                 <br />
                                 Development of serverless architecture for CloudWatch log streaming to AWS ElasticSearch Service for applications monitoring using Kibana Dashboard.
+                            </p>
+                            <p>
+                                <b>PoC on ROS with Turtlebot</b>
+                                <br />
+                                Studying the Robot Operating System (ROS) framework to build a firmware to work with a turtlebot3, in order to use them in possible Customer scenarios (Supply Chain, ...)
+                                <br />
+                                Using AWS RoboMaker service to simulate the application in a managed environment, and for the distribution of firmware on fleets.
+                                <br />
+                                At the end of the PoC the turtlebot3, with the firmware installed on, was able to turn in a room, using a Lidar to map it, and with a camera, rekognize what it saw (using AWS Rekognition).
                             </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">April 2017 - April 2020</span></div>
