@@ -39,4 +39,10 @@
     $("body").scrollspy({
         target: "#sideNav",
     });
+
+    $(document).ready(function(){
+        $('[tool-tip-toggle="tooltip"]').tooltip({
+            placement : 'top'
+        });
+    });
 })(jQuery); // End of use strict
