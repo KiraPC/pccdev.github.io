@@ -10166,6 +10166,10 @@ p.lead {
   color: currentColor;
 }
 
+.icon-go:before {
+  content: "";
+}
+
 section.resume-section {
   display: flex;
   align-items: center;
