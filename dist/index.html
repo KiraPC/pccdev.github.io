@@ -31,7 +31,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1DbcFP97SrhSM17e469k9-tCOoH6g1qNf/view?usp=sharing">Curriculum</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1e-wgn89FiH0g0uPGnuD4ScybPezxaLaf/view?usp=share_link" target="_blank">Curriculum</a></li>
                 </ul>
             </div>
         </nav>
@@ -66,7 +66,47 @@
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">ML Software Engineer</h3>
+                            <h3 class="mb-0">Senior Software Engineer</h3>
+                            <div class="subheading mb-3">Poste Italiane SpA</div>
+                            <p>
+                                <b>Nuova Area Comunicazioni</b>
+                                <br />
+                                Design and Development of the Nuova Area Comunicazioni backend architecture
+                                <br />
+                                The Nuova Area Comunicazioni is the Poste new notification platform to deliver messages to its customers.
+                                <br />
+                                The architecture is built on AWS cloud. Most of the operations are handled serverless using Lambda Functions, AWS SQS and SNS to decouple. Notifications are stored on AWS OpenSearch for searching. AWS S3 is used as persistant storage.
+                                <br />
+                                The backed APIs are exposed via Java Microservices (Spring) deployed on a RedHad OpenShift cluster running on AWS ECS.
+                                <br />
+                                To handle the backward compatibility with the old system, an SMTP server, build in GOLang, is deployed on AWS ECS forwarding the received emails to AWS S3. All the existsing users (~40M) and messages (~300 per user) are migrated via a Java Backend Application carefully developed to handle a huge load.
+                            </p>
+                            <p>
+                                <b>DataProducts</b>
+                                <br />
+                                For the new DataMesh company platform I developed some PySpark Notebooks on Azure Databricks
+                                <br />
+                                The Notebooks are sheduled to run via DataFactory Azure service, collect data from an Azure EventHub then tranform in 3 step way (Bronze, Silver and Gold) and storing them in Azure Blob Storage.
+                                <br />
+                                In the last step, Gold, the data are well formatted to be processed for business analysis.
+                            </p>
+                            <p>
+                                <b>Assurance Consoles</b>
+                                <br />
+                                My Javascript Skills target me to be the 'Console Man'.
+                                <br />
+                                In order to support the different application the team build and deliver to production, I developed 2 consoles (one for each product) and others are starting.
+                                <br />
+                                The already built consoles are used for assurance. The production team use them to analize the data produces by the application, and reclaim it if necessary.
+                                <br />
+                                I used the new Svelte framework, one Client Side Rendering (CSR) with SvelteJS, and the other Server Side Rendering (SSR) with SvelteKit.
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">March 2022 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Data Developer & Engineer</h3>
                             <div class="subheading mb-3">Enel Group</div>
                             <p>
                                 <b>Enel X IoT Devices Platform</b>
@@ -105,7 +145,7 @@
                                 Build CI/CD pipelines for building/testing/deployment of custom Python libraries with auto doc generation, using the Atlassian suite.
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Arpil 2020 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">April 2020 - March 2022</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -181,13 +221,15 @@
                     <h2 class="mb-5">Skills</h2>
                     <div class="subheading mb-3">Programming Languages & Frameworks</div>
                     <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-java" tool-tip-toggle="tooltip" data-original-title="Java"></i></li>
+                        <li class="list-inline-item"><i class="icon-spring" tool-tip-toggle="tooltip" data-original-title="Spring"></i></li>
+                        <li class="list-inline-item"><span class="icon-svelte" tool-tip-toggle="tooltip" data-original-title="Svelte"></span></li>
                         <li class="list-inline-item"><span class="icon-javascript" tool-tip-toggle="tooltip" data-original-title="JavaScript"></span></li>
                         <li class="list-inline-item"><span class="icon-typescript" tool-tip-toggle="tooltip" data-original-title="TypeScript"></span></li>
                         <li class="list-inline-item"><i class="fab fa-node-js" tool-tip-toggle="tooltip" data-original-title="NodeJS"></i></li>
                         <li class="list-inline-item"><i class="fab fa-angular" tool-tip-toggle="tooltip" data-original-title="Angular"></i></li>
                         <li class="list-inline-item"><i class="fab fa-react" tool-tip-toggle="tooltip" data-original-title="React"></i></li>
                         <li class="list-inline-item"><i class="fab fa-python" tool-tip-toggle="tooltip" data-original-title="Python"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-java" tool-tip-toggle="tooltip" data-original-title="Java"></i></li>
                         <li class="list-inline-item"><span class="icon-go" tool-tip-toggle="tooltip" data-original-title="GoLang"></span></li>
                     </ul>
                     <div class="subheading mb-3">Tools</div>
@@ -198,11 +240,13 @@
                         <li class="list-inline-item"><i class="fab fa-aws" tool-tip-toggle="tooltip" data-original-title="AWS"></i></li>
                         <li class="list-inline-item"><span class="icon-googlecloud" tool-tip-toggle="tooltip" data-original-title="Google Cloud"></span></li>
                         <li class="list-inline-item"><i class="fab fa-docker" tool-tip-toggle="tooltip" data-original-title="Docker"></i></li>
+                        <li class="list-inline-item"><i class="con-redhat" tool-tip-toggle="tooltip" data-original-title="Redhat OpenShift"></i></li>
                         <li class="list-inline-item"><i class="fas fa-dharmachakra" tool-tip-toggle="tooltip" data-original-title="Kubernetes"></i></li>
                         <li class="list-inline-item"><span class="icon-elastic" tool-tip-toggle="tooltip" data-original-title="ElasticSearch &amp; Kibana"></span></li>
                         <li class="list-inline-item"><i class="fab fa-bitbucket" tool-tip-toggle="tooltip" data-original-title="BitBucket"></i></li>
                         <li class="list-inline-item"><i class="fab fa-jira" tool-tip-toggle="tooltip" data-original-title="Jira"></i></li>
                         <li class="list-inline-item"><i class="fab fa-confluence" tool-tip-toggle="tooltip" data-original-title="Confluence"></i></li>
+                        <li class="list-inline-item"><i class="icon-microsoftazure" tool-tip-toggle="tooltip" data-original-title="Azure"></i></li>
                     </ul>
                     <div class="subheading mb-3">Workflow</div>
                     <ul class="fa-ul mb-0">

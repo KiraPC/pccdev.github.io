@@ -47,8 +47,8 @@ html(lang='en')
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#awards') Awards
                     li.nav-item
-                        a.nav-link(href='https://drive.google.com/file/d/1DbcFP97SrhSM17e469k9-tCOoH6g1qNf/view?usp=sharing') Curriculum
-            
+                        a.nav-link(href='https://drive.google.com/file/d/1e-wgn89FiH0g0uPGnuD4ScybPezxaLaf/view?usp=share_link' target="_blank") Curriculum
+
 
         // Page Content
         .container-fluid.p-0
@@ -60,7 +60,7 @@ html(lang='en')
                         | Carbone
                         span.text-primary Pasquale Carmine
                     .subheading.mb-5
-                        | Rome, Italy · (+39) 327-0055770 · 
+                        | Rome, Italy · (+39) 327-0055770 ·
                         a(href='mailto:pasqualecarmine.carbone.com') pasqualecarmine.carbone@gmail.com
                     p.lead.mb-5
                         | Software Engineer with a strong passion for the technology since I was a child.
@@ -81,9 +81,50 @@ html(lang='en')
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            h3.mb-0 ML Software Engineer
+                            h3.mb-0 Senior Software Engineer
+                            .subheading.mb-3 Poste Italiane SpA
+                            p
+                                | <b>Nuova Area Comunicazioni</b>
+                                br
+                                | Design and Development of the Nuova Area Comunicazioni backend architecture
+                                br
+                                | The Nuova Area Comunicazioni is the Poste new notification platform to deliver messages to its customers.
+                                br
+                                | The architecture is built on AWS cloud.
+                                | Most of the operations are handled serverless using Lambda Functions, AWS SQS and SNS to decouple.
+                                | Notifications are stored on AWS OpenSearch for searching. AWS S3 is used as persistant storage.
+                                br
+                                | The backed APIs are exposed via Java Microservices (Spring) deployed on a RedHad OpenShift cluster running on AWS ECS.
+                                br
+                                | To handle the backward compatibility with the old system, an SMTP server, build in GOLang, is deployed on AWS ECS forwarding the received emails to AWS S3.
+                                | All the existsing users (~40M) and messages (~300 per user) are migrated via a Java Backend Application carefully developed to handle a huge load.
+                            p
+                                | <b>DataProducts</b>
+                                br
+                                | For the new DataMesh company platform I developed some PySpark Notebooks on Azure Databricks
+                                br
+                                | The Notebooks are sheduled to run via DataFactory Azure service, collect data from an Azure EventHub then tranform in 3 step way (Bronze, Silver and Gold)
+                                | and storing them in Azure Blob Storage.
+                                br
+                                | In the last step, Gold, the data are well formatted to be processed for business analysis.
+                            p
+                                | <b>Assurance Consoles</b>
+                                br
+                                | My Javascript Skills target me to be the 'Console Man'.
+                                br
+                                | In order to support the different application the team build and deliver to production, I developed 2 consoles (one for each product) and others are starting.
+                                br
+                                | The already built consoles are used for assurance. The production team use them to analize the data produces by the application, and reclaim it if necessary.
+                                br
+                                | I used the new Svelte framework, one Client Side Rendering (CSR) with SvelteJS, and the other Server Side Rendering (SSR) with SvelteKit.
+                        .flex-shrink-0
+                            span.text-primary March 2022 - Present
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Data Developer & Engineer
                             .subheading.mb-3 Enel Group
-                            p 
+                            p
                                 | <b>Enel X IoT Devices Platform</b>
                                 br
                                 | Development of a microservices in the Enel X platform for IoT devices.
@@ -102,14 +143,14 @@ html(lang='en')
                                 | It adopt the MLOps approach using the Atlassian suite for the Repository Manager (BitBucket) and CI/CD Tool (Bamboo),
                                 | and AWS Resources for ML pipelines (StepFunctions, Lambda and Sagemaker).
                                 br
-                                | It includes also a Catalog that collect all the Framework deliverables. 
+                                | It includes also a Catalog that collect all the Framework deliverables.
                                 | It is a serverless application. Use scheduled Lambdas to collect data and store them on AWS ElasticSearch service, that an AWS API Gateway + Lambda call to retrieve stored data and return them to the final client.
-                            
+
                             p
                                 | <b>Development of a Common Data Catalog</b>
                                 br
                                 | The catalog is build with Angular 9 + Material Design, served by a Wildfly server, that also expose APIs to interact with other BE.
-                            
+
                             p
                                 | <b>Helping Data Scientist team build ML Models, taking care the application development</b>
                                 br
@@ -121,24 +162,24 @@ html(lang='en')
                                 br
                                 | Build CI/CD pipelines for building/testing/deployment of custom Python libraries with auto doc generation, using the Atlassian suite.
                         .flex-shrink-0
-                            span.text-primary Arpil 2020 - Present
+                            span.text-primary April 2020 - March 2022
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 Software Engineer
                             .subheading.mb-3 Accenture Technology Solutions
-                            
+
                             p
-                                
+
                                 | <b>Design, development and maintenance of a NodeJS application</b>
                                 br
-                                | A Web Server build following the REST pattern, using Express.js as Framework. 
+                                | A Web Server build following the REST pattern, using Express.js as Framework.
                                 br
                                 | The team followed the Agile method and the Design First Developement Pattern.
                                 br
                                 | Each application funtionality is tested using Chai and Mocha as a Framework.
 
-                            p 
+                            p
                                 | <b>Design and development of a NodeJS Framework to build microservices</b>
                                 br
                                 | The Framework, with a plugin approach, make developers easy build modular microservices using NodeJS and Express.
@@ -147,7 +188,7 @@ html(lang='en')
                                 br
                                 | TypeScript was chosen because it matched better with the IoC (Inversion of Control) pattern chosen for development.
 
-                            p 
+                            p
                                 | <b>Design and development of Cloud-Native solutions focused on AWS</b>
                                 br
                                 | Build CI/CD pipeline to deploy serverless application to AWS with Jenkins and SAM (Serverless Application Model).
@@ -198,101 +239,121 @@ html(lang='en')
                     .subheading.mb-3 Programming Languages & Frameworks
                     ul.list-inline.dev-icons
                         li.list-inline-item
+                            i.fab.fa-java(
+                                tool-tip-toggle="tooltip"
+                                data-original-title="Java"
+                            )
+                        li.list-inline-item
+                            i.icon-spring(
+                                tool-tip-toggle="tooltip"
+                                data-original-title="Spring"
+                            )
+                        li.list-inline-item
+                            span.icon-svelte(
+                                tool-tip-toggle="tooltip"
+                                data-original-title="Svelte"
+                            )
+                        li.list-inline-item
                             span.icon-javascript(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="JavaScript"
                             )
                         li.list-inline-item
                             span.icon-typescript(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="TypeScript"
                             )
                         li.list-inline-item
                             i.fab.fa-node-js(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="NodeJS"
                             )
                         li.list-inline-item
                             i.fab.fa-angular(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="Angular"
                             )
                         li.list-inline-item
                             i.fab.fa-react(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="React"
                             )
                         li.list-inline-item
                             i.fab.fa-python(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="Python"
                             )
                         li.list-inline-item
-                            i.fab.fa-java(
-                                tool-tip-toggle="tooltip" 
-                                data-original-title="Java"
-                            )
-                        li.list-inline-item
                             span.icon-go(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="GoLang"
                             )
                     .subheading.mb-3 Tools
                     ul.list-inline.dev-icons
                         li.list-inline-item
                             i.fab.fa-git(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="Git"
                             )
                         li.list-inline-item
                             i.fab.fa-npm(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="NPM"
                             )
                         li.list-inline-item
                             i.fab.fa-jenkins(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="Jenkins"
                             )
                         li.list-inline-item
                             i.fab.fa-aws(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="AWS"
                             )
                         li.list-inline-item
                             span.icon-googlecloud(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="Google Cloud"
                             )
                         li.list-inline-item
                             i.fab.fa-docker(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="Docker"
                             )
                         li.list-inline-item
+                            i.con-redhat(
+                                tool-tip-toggle="tooltip"
+                                data-original-title="Redhat OpenShift"
+                            )
+                        li.list-inline-item
                             i.fas.fa-dharmachakra(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="Kubernetes"
                             )
                         li.list-inline-item
                             span.icon-elastic(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="ElasticSearch & Kibana"
                             )
                         li.list-inline-item
                             i.fab.fa-bitbucket(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="BitBucket"
                             )
                         li.list-inline-item
                             i.fab.fa-jira(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="Jira"
                             )
                         li.list-inline-item
                             i.fab.fa-confluence(
-                                tool-tip-toggle="tooltip" 
+                                tool-tip-toggle="tooltip"
                                 data-original-title="Confluence"
+                            )
+                        li.list-inline-item
+                            i.icon-microsoftazure(
+                                tool-tip-toggle="tooltip"
+                                data-original-title="Azure"
                             )
                     .subheading.mb-3 Workflow
                     ul.fa-ul.mb-0
@@ -318,7 +379,7 @@ html(lang='en')
                     p
                         | I love IT, so I spend some of my free time to learn about new technologies and experiments.
                     p
-                        | I also love automation and use my knowledge to help my everyday life tasks. 
+                        | I also love automation and use my knowledge to help my everyday life tasks.
                         br
                         | For example I built a NodeJS Server to interact with my LG TV so that I can use my Google Home to do TV actions (that because my TV doesn't support this feature natively).
                     p
@@ -345,7 +406,7 @@ html(lang='en')
                             span.fa-li
                                 i.fas.fa-trophy.text-warning
                             | 3
-                            sup rd 
+                            sup rd
                             | Place - KPN ITV Hackathon - 2019
                         li
                             span.fa-li
